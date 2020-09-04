@@ -1,6 +1,6 @@
 FROM node:alipne
 
-WORKDIR :/app
+WORKDIR ./app
 
 COPY ./package.json ./
 
