@@ -1,9 +1,11 @@
-version: '3'
-services: 
-    redis-server:
-        image: redi
-    node-app:
-        build: .
-        context: Dockerfile
-        ports: 
-            -8080:8080
+version: "3"
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    build:
+      context: .
+    ports: 
+      - 8080:8080
+
+      
